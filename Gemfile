@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'slim-rails'
 gem 'rails',        '5.0.0.1'
 gem 'puma',         '3.4.0'
 gem 'sass-rails',   '5.0.6'
@@ -20,6 +19,10 @@ group :development do
   gem 'listen',                '3.0.8'
   gem 'spring',                '1.7.2'
   gem 'spring-watcher-listen', '2.0.0'
+end
+
+group :production do
+  gem 'pg', '0.18.4'
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
